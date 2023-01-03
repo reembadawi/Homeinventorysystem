@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("User Profile");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("Shopping Iteams");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("My Inventory");
@@ -37,6 +38,7 @@
             treeNode2,
             treeNode3,
             treeNode4});
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmName));
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lbllogo = new System.Windows.Forms.Label();
             this.panelApp = new System.Windows.Forms.Panel();
@@ -46,6 +48,7 @@
             this.panelnavegation = new System.Windows.Forms.Panel();
             this.panelcontent = new System.Windows.Forms.Panel();
             this.treeViewnavigation = new System.Windows.Forms.TreeView();
+            this.imageListnavigation = new System.Windows.Forms.ImageList(this.components);
             this.panelHeader.SuspendLayout();
             this.panelApp.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -146,22 +149,48 @@
             // treeViewnavigation
             // 
             this.treeViewnavigation.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.treeViewnavigation.HotTracking = true;
+            this.treeViewnavigation.ImageIndex = 0;
+            this.treeViewnavigation.ImageList = this.imageListnavigation;
             this.treeViewnavigation.Location = new System.Drawing.Point(0, 0);
             this.treeViewnavigation.Name = "treeViewnavigation";
+            treeNode1.ImageKey = "info.png";
             treeNode1.Name = "NodeUserProfile";
+            treeNode1.SelectedImageKey = "check.png";
             treeNode1.Text = "User Profile";
+            treeNode2.ImageKey = "id-card.png";
             treeNode2.Name = "Node2ShoppingIteams";
+            treeNode2.SelectedImageKey = "check.png";
             treeNode2.Text = "Shopping Iteams";
+            treeNode3.ImageKey = "registration.png";
             treeNode3.Name = "Node3MyInventory";
+            treeNode3.SelectedImageKey = "check.png";
             treeNode3.Text = "My Inventory";
+            treeNode4.ImageKey = "dashboard.png";
             treeNode4.Name = "Node4StatisticsAndCharts";
+            treeNode4.SelectedImageKey = "check.png";
             treeNode4.Text = "Statistics And Charts";
+            treeNode5.ImageKey = "manager.png";
             treeNode5.Name = "NodeRoot";
+            treeNode5.SelectedImageKey = "(default)";
             treeNode5.Text = "Home inventory system";
             this.treeViewnavigation.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode5});
+            this.treeViewnavigation.SelectedImageIndex = 0;
             this.treeViewnavigation.Size = new System.Drawing.Size(297, 447);
             this.treeViewnavigation.TabIndex = 0;
+            this.treeViewnavigation.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeViewnavigation_AfterSelect);
+            // 
+            // imageListnavigation
+            // 
+            this.imageListnavigation.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageListnavigation.ImageStream")));
+            this.imageListnavigation.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageListnavigation.Images.SetKeyName(0, "manager.png");
+            this.imageListnavigation.Images.SetKeyName(1, "info.png");
+            this.imageListnavigation.Images.SetKeyName(2, "id-card.png");
+            this.imageListnavigation.Images.SetKeyName(3, "registration.png");
+            this.imageListnavigation.Images.SetKeyName(4, "dashboard.png");
+            this.imageListnavigation.Images.SetKeyName(5, "check.png");
             // 
             // frmName
             // 
@@ -198,5 +227,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.TreeView treeViewnavigation;
+        private System.Windows.Forms.ImageList imageListnavigation;
     }
 }

@@ -52,10 +52,46 @@
     <Compile Include="frmName.Designer.cs">
       <DependentUpon>frmName.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmMyinventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmMyinventory.Designer.cs">
+      <DependentUpon>frmMyinventory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmShoppingiteams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmShoppingiteams.Designer.cs">
+      <DependentUpon>frmShoppingiteams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmStatistics And Charts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmStatistics And Charts.Designer.cs">
+      <DependentUpon>frmStatistics And Charts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmUserprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmUserprofile.Designer.cs">
+      <DependentUpon>frmUserprofile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmName.resx">
       <DependentUpon>frmName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmMyinventory.resx">
+      <DependentUpon>frmMyinventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmShoppingiteams.resx">
+      <DependentUpon>frmShoppingiteams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmStatistics And Charts.resx">
+      <DependentUpon>frmStatistics And Charts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmUserprofile.resx">
+      <DependentUpon>frmUserprofile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
