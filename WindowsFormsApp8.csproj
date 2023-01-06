@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessLayer\IteamsDAL.cs" />
+    <Compile Include="DataAccessLayer\UsersDAL.cs" />
+    <Compile Include="Entities\Item.cs" />
+    <Compile Include="Entities\User.cs" />
     <Compile Include="frmName.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +122,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Script\PersonalShopping.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
