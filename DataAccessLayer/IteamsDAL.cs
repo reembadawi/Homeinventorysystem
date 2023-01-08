@@ -18,7 +18,7 @@ namespace WindowsFormsApp8.DataAccessLayer
 
         public static void CreateItem(Item item)
         {
-            string commandText = $"Insert into SystemItems values('{item.FirstName}','{item.LastName}','{item.ItemName}','{item.Password}')";
+            string commandText = $"Insert into Items values('{item.ItemName}','{item.ItemUnit}','{item.ItemId}','{item.Quntity}')";
             SqlCommand command = new SqlCommand(commandText, connection);
             connection.Open();
             connection.Close();
@@ -28,10 +28,10 @@ namespace WindowsFormsApp8.DataAccessLayer
         public static void UpdateItem(Item item)
         {
             string commandText = $"Update SystemItems Set " +
-               $"FirstName='{item.FirstName}'" +
-               $"LastName='{item.LastName}'" +
-               $"ItemName='{item.itemName}'" +
-               $"Password='{item.Password}'";
+               $"ItemName='{item.ItemName}'" +
+               $"ItemUnit='{item.ItemUnit}'" +
+               $"Quntity='{item.Quntity}'" +
+               $"UserId='{item.UserId}'";
 
             SqlCommand command = new SqlCommand(commandText, connection);
             connection.Open();
@@ -41,7 +41,7 @@ namespace WindowsFormsApp8.DataAccessLayer
         }
         public static void DeleteItem(Item item)
         {
-            string commandText = $"Delet from SystemItems where ItemId ={Item.ItemId}";
+            string commandText = $"Delet from Items where ItemId ={item.ItemId}";
 
             SqlCommand command = new SqlCommand(commandText, connection);
             connection.Open();

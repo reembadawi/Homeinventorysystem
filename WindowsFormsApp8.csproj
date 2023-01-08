@@ -50,12 +50,14 @@
     <Compile Include="DataAccessLayer\UsersDAL.cs" />
     <Compile Include="Entities\Item.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Enums\FormState.cs" />
     <Compile Include="frmName.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmName.Designer.cs">
       <DependentUpon>frmName.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\dataGridViewItems.cs" />
     <Compile Include="GUI\frmMyinventory.cs">
       <SubType>Form</SubType>
     </Compile>
